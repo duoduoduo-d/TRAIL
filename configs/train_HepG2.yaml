@@ -1,0 +1,205 @@
+# Cell type
+
+# ==========================================
+# Dataset
+# ==========================================
+
+cell_line: HepG2
+
+
+data:
+
+  transcript_file: resources/transcript/HepG2_main_transcript_info_tpm.tsv
+
+  label_dir: resources/labels/HepG2/
+
+  cache_dir: cache/HepG2/
+
+  split_file: cache/HepG2/split.json
+
+  tpm_threshold: 10
+
+  max_length: 13200
+
+  max_utr5_len: 1500
+
+
+
+# ==========================================
+# Prediction targets
+# ==========================================
+
+# Add additional RBPs here
+
+targets:
+ - RBP_Encode_eclip_HepG2_AGGF1
+ - RBP_Encode_eclip_HepG2_AKAP1
+ - RBP_Encode_eclip_HepG2_AQR
+ - RBP_Encode_eclip_HepG2_BCCIP
+ - RBP_Encode_eclip_HepG2_BCLAF1
+ - RBP_Encode_eclip_HepG2_BUD13
+ - RBP_Encode_eclip_HepG2_CDC40
+ - RBP_Encode_eclip_HepG2_CSTF2T
+ - RBP_Encode_eclip_HepG2_CSTF2
+ - RBP_Encode_eclip_HepG2_DDX3X
+ - RBP_Encode_eclip_HepG2_DDX52
+ - RBP_Encode_eclip_HepG2_DDX55
+ - RBP_Encode_eclip_HepG2_DDX59
+ - RBP_Encode_eclip_HepG2_DDX6
+ - RBP_Encode_eclip_HepG2_DGCR8
+ - RBP_Encode_eclip_HepG2_DHX30
+ - RBP_Encode_eclip_HepG2_DKC1
+ - RBP_Encode_eclip_HepG2_DROSHA
+ - RBP_Encode_eclip_HepG2_EFTUD2
+ - RBP_Encode_eclip_HepG2_EIF3D
+ - RBP_Encode_eclip_HepG2_EIF3H
+ - RBP_Encode_eclip_HepG2_EXOSC5
+ - RBP_Encode_eclip_HepG2_FAM120A
+ - RBP_Encode_eclip_HepG2_FASTKD2
+ - RBP_Encode_eclip_HepG2_FKBP4
+ - RBP_Encode_eclip_HepG2_FTO
+ - RBP_Encode_eclip_HepG2_FUBP3
+ - RBP_Encode_eclip_HepG2_FUS
+ - RBP_Encode_eclip_HepG2_FXR2
+ - RBP_Encode_eclip_HepG2_G3BP1
+ - RBP_Encode_eclip_HepG2_GRSF1
+ - RBP_Encode_eclip_HepG2_GRWD1
+ - RBP_Encode_eclip_HepG2_GTF2F1
+ - RBP_Encode_eclip_HepG2_HLTF
+ - RBP_Encode_eclip_HepG2_HNRNPA1
+ - RBP_Encode_eclip_HepG2_HNRNPC
+ - RBP_Encode_eclip_HepG2_HNRNPK
+ - RBP_Encode_eclip_HepG2_HNRNPL
+ - RBP_Encode_eclip_HepG2_HNRNPM
+ - RBP_Encode_eclip_HepG2_HNRNPUL1
+ - RBP_Encode_eclip_HepG2_HNRNPU
+ - RBP_Encode_eclip_HepG2_IGF2BP1
+ - RBP_Encode_eclip_HepG2_IGF2BP3
+ - RBP_Encode_eclip_HepG2_ILF3
+ - RBP_Encode_eclip_HepG2_KHSRP
+ - RBP_Encode_eclip_HepG2_LARP4
+ - RBP_Encode_eclip_HepG2_LARP7
+ - RBP_Encode_eclip_HepG2_LIN28B
+ - RBP_Encode_eclip_HepG2_LSM11
+ - RBP_Encode_eclip_HepG2_MATR3
+ - RBP_Encode_eclip_HepG2_NCBP2
+ - RBP_Encode_eclip_HepG2_NIP7
+ - RBP_Encode_eclip_HepG2_NKRF
+ - RBP_Encode_eclip_HepG2_NOL12
+ - RBP_Encode_eclip_HepG2_NOLC1
+ - RBP_Encode_eclip_HepG2_NSUN2
+ - RBP_Encode_eclip_HepG2_PABPN1
+ - RBP_Encode_eclip_HepG2_PCBP1
+ - RBP_Encode_eclip_HepG2_PCBP2
+ - RBP_Encode_eclip_HepG2_POLR2G
+ - RBP_Encode_eclip_HepG2_PPIG
+ - RBP_Encode_eclip_HepG2_PRPF4
+ - RBP_Encode_eclip_HepG2_PRPF8
+ - RBP_Encode_eclip_HepG2_PTBP1
+ - RBP_Encode_eclip_HepG2_QKI
+ - RBP_Encode_eclip_HepG2_RBFOX2
+ - RBP_Encode_eclip_HepG2_RBM15
+ - RBP_Encode_eclip_HepG2_RBM22
+ - RBP_Encode_eclip_HepG2_RBM5
+ - RBP_Encode_eclip_HepG2_RPS3
+ - RBP_Encode_eclip_HepG2_SAFB
+ - RBP_Encode_eclip_HepG2_SDAD1
+ - RBP_Encode_eclip_HepG2_SF3A3
+ - RBP_Encode_eclip_HepG2_SF3B4
+ - RBP_Encode_eclip_HepG2_SFPQ
+ - RBP_Encode_eclip_HepG2_SLTM
+ - RBP_Encode_eclip_HepG2_SMNDC1
+ - RBP_Encode_eclip_HepG2_SND1
+ - RBP_Encode_eclip_HepG2_SRSF1
+ - RBP_Encode_eclip_HepG2_SRSF7
+ - RBP_Encode_eclip_HepG2_SRSF9
+ - RBP_Encode_eclip_HepG2_SSB
+ - RBP_Encode_eclip_HepG2_STAU2
+ - RBP_Encode_eclip_HepG2_SUB1
+ - RBP_Encode_eclip_HepG2_SUGP2
+ - RBP_Encode_eclip_HepG2_SUPV3L1
+ - RBP_Encode_eclip_HepG2_TAF15
+ - RBP_Encode_eclip_HepG2_TARDBP
+ - RBP_Encode_eclip_HepG2_TBRG4
+ - RBP_Encode_eclip_HepG2_TIA1
+ - RBP_Encode_eclip_HepG2_TIAL1
+ - RBP_Encode_eclip_HepG2_TRA2A
+ - RBP_Encode_eclip_HepG2_TROVE2
+ - RBP_Encode_eclip_HepG2_U2AF1
+ - RBP_Encode_eclip_HepG2_U2AF2
+ - RBP_Encode_eclip_HepG2_UCHL5
+ - RBP_Encode_eclip_HepG2_UPF1
+ - RBP_Encode_eclip_HepG2_UTP18
+ - RBP_Encode_eclip_HepG2_WDR43
+ - RBP_Encode_eclip_HepG2_XPO5
+ - RBP_Encode_eclip_HepG2_XRCC6
+ - RBP_Encode_eclip_HepG2_XRN2
+ - RBP_Encode_eclip_HepG2_YBX3
+ - RBP_Encode_eclip_HepG2_ZC3H11A
+ - RBP_Encode_eclip_HepG2_ZNF800
+
+
+
+# ==========================================
+# Model
+# ==========================================
+
+model:
+
+  input_channels: 8
+
+  hidden_dim: 640
+
+  depth: 6
+
+  dropout: 0.1
+
+
+
+# ==========================================
+# Training
+# ==========================================
+
+training:
+
+  epochs: 50
+
+
+  batch_size: 8
+
+
+  learning_rate: 0.0003
+
+
+  weight_decay: 0.05
+
+
+  # BCE positive weight
+
+  pos_weight: 5.0
+
+
+  # early stopping
+
+  patience: 10
+
+
+
+# ==========================================
+# Optimization
+# ==========================================
+
+optimizer:
+
+  scheduler: cosine
+
+
+
+# ==========================================
+# Runtime
+# ==========================================
+
+seed: 42
+
+
+device: cuda

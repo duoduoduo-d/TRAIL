@@ -1,0 +1,26 @@
+# data
+resources/*
+cache/*
+
+# checkpoints
+checkpoints/K562*
+checkpoints/HEK293T*
+checkpoints/HeLa*
+checkpoints/HepG2*
+
+# python
+__pycache__/
+*.pyc
+
+# environment
+.env
+
+# IDE
+.vscode/
+.idea/
+
+test.ipynb
+
+*pt
+
+test.ipynb

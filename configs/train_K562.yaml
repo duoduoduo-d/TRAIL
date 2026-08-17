@@ -1,0 +1,104 @@
+# Cell type
+
+# ==========================================
+# Dataset
+# ==========================================
+
+cell_line: K562
+
+
+data:
+
+  transcript_file: resources/transcript/K562_main_transcript_info_tpm.tsv
+
+  label_dir: resources/labels/K562/
+
+  cache_dir: cache/K562/
+
+  split_file: cache/K562/split.json
+
+  tpm_threshold: 10
+
+  max_length: 13200
+
+  max_utr5_len: 1500
+
+
+
+# ==========================================
+# Prediction targets
+# ==========================================
+
+# Add additional RBPs here
+
+targets:
+
+  - RBP_Encode_eclip_K562_CSTF2T
+
+  - RBP_Encode_eclip_K562_NCBP2
+
+
+
+# ==========================================
+# Model
+# ==========================================
+
+model:
+
+  input_channels: 8
+
+  hidden_dim: 640
+
+  depth: 6
+
+  dropout: 0.1
+
+
+
+# ==========================================
+# Training
+# ==========================================
+
+training:
+
+  epochs: 50
+
+
+  batch_size: 16
+
+
+  learning_rate: 0.0003
+
+
+  weight_decay: 0.05
+
+
+  # BCE positive weight
+
+  pos_weight: 5.0
+
+
+  # early stopping
+
+  patience: 10
+
+
+
+# ==========================================
+# Optimization
+# ==========================================
+
+optimizer:
+
+  scheduler: cosine
+
+
+
+# ==========================================
+# Runtime
+# ==========================================
+
+seed: 42
+
+
+device: cuda
